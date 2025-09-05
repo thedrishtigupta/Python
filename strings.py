@@ -1,3 +1,6 @@
+
+# Strings are immutable in Python
+
 # To input a user's name and print good afternoon
 
 # name = input("Enter  your name: ")
@@ -20,6 +23,9 @@
 # print(letter)
 
 
-doublestr = "This contains   double   spaces"
-print(doublestr.find("  ")) #finds the index of first double space, or -1 if not found
+# doublestr = "This contains   double   spaces"
+# print(doublestr.find("  ")) #finds the index of first double space, or -1 if not found
 
+
+letter = "Dear User,\nYou are a genius. \nThanks for enrolling!"
+print(letter)
