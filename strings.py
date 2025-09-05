@@ -2,3 +2,19 @@
 
 name = input("Enter  your name: ")
 print("Good Afternoon,", name) #No need to add extra space after Afternoon,", it automatically does it
+print(f"Good Afternoon, {name}") # use f for template literal
+date = input("Enter a date: ")
+
+# This doesn't work
+# letter = """
+#     Dear {name},
+#     You are Selected!
+#     {date}"""
+
+letter = """
+    Dear {name},
+    You are Selected!
+    {date}"""
+print(letter.replace("|<name>|", name).replace("|<date>|", date)) #this work
+
+print(letter)
