@@ -30,3 +30,4 @@
 ## square of num
 n = int(input("Enter a number: "));
 print("Square = ", n*n); #gives ans in int only
+print("Square = ", n**2); #gives ans in int only , power operator
