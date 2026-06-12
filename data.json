@@ -1,0 +1,14 @@
+{
+    "name": "Alice",
+    "age": 30,
+    "hobbies": [
+        "reading",
+        "hiking",
+        "coding"
+    ],
+    "address": {
+        "street": "123 Maple St",
+        "city": "Wonderland",
+        "zipcode": "12345"
+    }
+}
