@@ -40,3 +40,7 @@ htmlcov/
 build/
 dist/
 *.egg-info/
+
+
+#Scrape raw html files
+Web Scraping\google_jobs.html
