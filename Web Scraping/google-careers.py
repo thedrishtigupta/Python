@@ -17,4 +17,17 @@ import requests
 
 soup = BeautifulSoup('Web Scraping\google_jobs.html', 'lxml')
 
+
+
 print(soup.prettify())
+
+
+# li class_ = '1Ld3Je'
+# title = h3
+
+#location =
+# span class_ = 'pwO9Dc vo5qdf' -> spans
+
+# div = 'Xsxa1e' - li  -> minimum qualifications
+
+# div = 'VfPpkd-dgl2Hf-ppHlrf-sM5MNb' - a -> href = Learn more/ job link
