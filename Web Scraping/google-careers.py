@@ -7,7 +7,7 @@ import requests
 
 # response = requests.get(url)
 
-# with open("Web Scraping\google_jobs.html", "w", encoding="utf-8") as file:
+# with open("Web Scraping/google_jobs.html", "w", encoding="utf-8") as file:
 #     file.write(response.text)
 
 # print("HTML saved!")
@@ -15,11 +15,15 @@ import requests
 
 #Scraping code
 
-soup = BeautifulSoup('Web Scraping\google_jobs.html', 'lxml')
+with open("Web Scraping/google_jobs.html", "r", encoding="utf-8") as file:
+    soup = BeautifulSoup(file, "lxml")
 
 
 
-print(soup.prettify())
+# print(soup.prettify())
+
+job_title = soup.find('li', class_='1Ld3Je')
+print(job_title)
 
 
 # li class_ = '1Ld3Je'
