@@ -402,3 +402,35 @@ class MyClass:
 myObj = MyClass([1, 2, 3])
 print(myObj.getLength())
 print(myObj.getDoubleLength())
+
+# Counter
+from collections import Counter
+
+s = "aabccc"
+cnt = Counter(s)
+
+print(cnt) # Counter({'c': 3, 'a': 2, 'b': 1})
+
+print(cnt['a'])  # 2
+print(cnt.most_common(2))
+
+# Default dict
+from collections import defaultdict
+
+graph = defaultdict(list)
+graph[x].append(y)
+
+freq = defaultdict(int)
+freq[x] += 1
+
+# Bisect, equivalent of lower bound / upper bound
+from bisect import bisect_left, bisect_right
+
+arr = [1,2,2,2,5]
+
+bisect_left(arr,2)   #1
+bisect_right(arr,2)  #4
+
+# RecursionError can be thrown for n > 1000, workaround:
+import sys
+sys.setrecursionlimit(10**6)
