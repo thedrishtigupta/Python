@@ -16,15 +16,11 @@ class Sentence:
         return self.words[index]
 
 # Generator
-def SentenceMethod(string):
-    words = string.split()
-    index = 0
-    
-    while index < len(words):
-        yield words[index]
-        index += 1
+def sentence(string):
+    for word in string.split():
+        yield word
 
-my_sentence = Sentence('This is a test')
+my_sentence = sentence('This is a test')
 
 for word in my_sentence:
     print(word)
